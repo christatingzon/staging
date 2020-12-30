@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/********************************
+* Base Styles 
+*********************************/
+/* reset by boostrap */
+body, html {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+@media only screen and (min-width : 768px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+.btn-join {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #FFCE00;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.57);
+  transition: 0.4s ease all;
+}
+
+@media only screen and (min-width : 768px) {
+  .btn-join {
+    font-size: 30px;
+  }
+}
+
+.btn-join:hover {
+  background-color: #e6b900;
+}
+
+/* Site Header */
+.site-header {
+  background-color: #0B2241;
+}
+
+.site-header .container {
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+.site-header img {
+  width: 324px;
+}
+
+/* Banner */
+.banner {
+  background-color: #16AFEA;
+}
+
+.banner .container {
+  padding-bottom: 70px;
+}
+
+.banner .block {
+  max-width: 880px;
+  background-color: #fff;
+  border: 1px solid #707070;
+}
+
+.banner .block .cta {
+  background-color: #0B2241;
+  color: #fff;
+  padding: 30px 15px;
+}
+
+.banner .block .cta h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width : 768px) {
+  .banner .block .cta h3 {
+    font-size: 24px;
+  }
+}
+
+.banner .block .cta .btn-join {
+  max-width: 479px;
+  width: 100%;
+  padding: 6px;
+}
+
+/* What you get */
+.what-you-get {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.what-you-get img {
+  width: 730px;
+}
+
+/* Sign Up CTA */
+.sign-up-cta {
+  background-color: #0B2241;
+  color: #fff;
+}
+
+.sign-up-cta img {
+  width: 560px;
+}
+
+.sign-up-cta .btn-join {
+  max-width: 560px;
+  width: 100%;
+  padding: 10px 6px;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width : 768px) {
+  .sign-up-cta .btn-join {
+    font-size: 43px;
+  }
+}
+
+/* Site Footer */
+.site-footer {
+  background-color: #16AFEA;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 0;
+  background-color: #0B2241;
+  color: #fff;
+}
+
+@media only screen and (min-width : 768px) {
+  .modal-content {
+    padding: 0 15px 15px;
+  }
+}
+
+.modal-content .btn-join {
+  width: 100%;
+  padding: 6px;
+}
+
+.modal-header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.modal-content input.form-control {
+  color: #222;
+  background-color: #f6f6f6;
+  padding: 23px 16px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 22px;
+  border-radius: 0;
+}
+
+.modal-content ::-webkit-input-placeholder {
+  color: #787878;
+  font-size: 16px;
+}
+
+.modal-content ::-moz-placeholder {
+  color: #787878;
+  font-size: 16px;
+}
+
+.modal-content :-ms-input-placeholder {
+  color: #787878;
+  font-size: 16px;
+}
+
+.modal-content ::-ms-input-placeholder {
+  color: #787878;
+  font-size: 16px;
+}
+
+.modal-content ::placeholder {
+  color: #787878;
+  font-size: 16px;
+}

@@ -1,0 +1,219 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+// Variables
+
+//Breakpoints
+$size-sm:      "only screen and (min-width : 480px)";
+$size-med:     "only screen and (min-width : 768px)"; // is represented in the iPad's portrait view
+$size-lg:      "only screen and (min-width : 992px)"; // is represented in the iPad's landscape view
+$size-xlg:     "only screen and (min-width: 1200px)";
+
+// Typography
+$main-font: 'Montserrat', Helvetica, sans-serif;
+$secondary-font: 'Lato', sans-serif;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+
+$white: #fff;
+$black: #000;
+$dark: #0B2241;
+$yellow: #FFCE00;
+$lblue: #16AFEA;
+
+// PAGE SECTION STYLES
+
+/********************************
+* Base Styles 
+*********************************/
+
+/* reset by boostrap */
+
+body, html {
+    font-family: $main-font;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    color: $black;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    transition: all 0.4s ease;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-family: $secondary-font;
+}
+
+// Headers
+h2 {
+    font-weight: $bold;
+    font-size: 1.7rem;
+
+    @media #{$size-med} {
+        font-size: 34px;
+    }
+}
+
+// Buttons
+.btn-join {
+    font-size: 28px;
+    font-weight: $bold;
+    color: $white;
+    background-color: $yellow;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    text-shadow: 1px 2px 1px rgba(0,0,0,.57);
+    transition: 0.4s ease all;
+
+    @media #{$size-med} {
+        font-size: 30px;
+    }
+
+    &:hover {
+        background-color: darken($color: $yellow, $amount: 5%)
+    }
+}
+
+/* Site Header */
+.site-header {
+    background-color: $dark;
+
+    .container {
+        padding-top: 10px;
+        padding-bottom: 6px;
+    }
+
+    img {
+        width: 324px;
+    }
+}
+
+/* Banner */
+.banner {
+    background-color: $lblue;
+
+    .container {
+        padding-bottom: 70px;
+    }
+
+    .block {
+        max-width: 880px;
+        background-color: #fff;
+        border: 1px solid #707070;
+
+        .cta {
+            background-color: $dark;
+            color: $white;
+            padding: 30px 15px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 24px;
+
+                @media #{$size-med} {
+                    font-size: 24px;
+                }
+            }
+
+            .btn-join {
+                max-width: 479px;
+                width: 100%;
+                padding: 6px;
+            }
+        }
+    }
+}
+
+
+/* What you get */
+.what-you-get {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    img {
+        width: 730px;
+    }
+}
+
+
+/* Sign Up CTA */
+.sign-up-cta {
+    background-color: $dark;
+    color: $white;
+
+    img {
+        width: 560px;
+    }
+
+    .btn-join {
+        max-width: 560px;
+        width: 100%;
+        padding: 10px 6px;
+        font-size: 1.8rem;
+
+        @media #{$size-med} {
+            font-size: 43px;
+        }
+    }
+}
+
+
+/* Site Footer */
+.site-footer {
+    background-color: $lblue;
+    color: $white;
+    font-size: 15px;
+}
+
+
+/* Modal */
+.modal-content {
+    border-radius: 0;
+    background-color: $dark;
+    color: $white;
+
+    @media #{$size-med} {
+        padding: 0 15px 15px;
+    }
+
+    .btn-join {
+        width: 100%;
+        padding: 6px;
+    }
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.modal-content input.form-control {
+    color: #222;
+    background-color: #f6f6f6;
+    padding: 23px 16px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 22px;
+    border-radius: 0;
+}
+
+.modal-content ::placeholder {
+    color: #787878;
+    font-size: 16px;
+}
