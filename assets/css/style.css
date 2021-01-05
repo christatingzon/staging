@@ -34,6 +34,11 @@ h2 {
   }
 }
 
+p {
+  line-height: 1.7;
+  font-size: 18px;
+}
+
 .btn-join {
   background-color: #02b3e4;
   border-color: #02b3e4;
