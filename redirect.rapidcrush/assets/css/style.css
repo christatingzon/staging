@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/********************************
+* Base Styles 
+*********************************/
+/* reset by boostrap */
+body, html {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Content */
+.content .container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .content .container {
+    max-width: 960px;
+  }
+}
+
+.content h2 {
+  font-weight: 700;
+}
+
+/* Spinner */
+.spinner-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.spinner-container .circular {
+  -webkit-animation: spinnerrotate 2s linear infinite;
+          animation: spinnerrotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.spinner-container .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: spinnerdash 1.5s ease-in-out infinite, spinnercolor 6s ease-in-out infinite;
+          animation: spinnerdash 1.5s ease-in-out infinite, spinnercolor 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes spinnerrotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinnerrotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spinnerdash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes spinnerdash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@-webkit-keyframes spinnercolor {
+  100%, 0% {
+    stroke: #02b3e4;
+  }
+  40% {
+    stroke: #242424;
+  }
+  66% {
+    stroke: #02b3e4;
+  }
+  80%, 90% {
+    stroke: #242424;
+  }
+}
+
+@keyframes spinnercolor {
+  100%, 0% {
+    stroke: #02b3e4;
+  }
+  40% {
+    stroke: #242424;
+  }
+  66% {
+    stroke: #02b3e4;
+  }
+  80%, 90% {
+    stroke: #242424;
+  }
+}
