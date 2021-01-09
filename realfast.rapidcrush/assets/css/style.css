@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+/********************************
+* Base Styles 
+*********************************/
+/* reset by boostrap */
+body, html {
+  font-family: "Oswald", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #333;
+  background-color: #f0efef;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.btn-yellow1, .btn-yellow2 {
+  background-color: #ffb423;
+  color: #6d4116;
+  background-image: linear-gradient(to bottom, #ffb423 0%, #f9a400 100%);
+  border: 0 none;
+  font-weight: 700;
+  font-size: 28px;
+  width: 100%;
+  padding: 13px;
+  transition: 0.4s ease all;
+  outline: 0;
+}
+
+@media only screen and (min-width : 768px) {
+  .btn-yellow1, .btn-yellow2 {
+    font-size: 36px;
+  }
+}
+
+.btn-yellow1:hover, .btn-yellow2:hover {
+  background-color: #fab425;
+  background-image: linear-gradient(to bottom, #ffb423 100%, #f9a400 0%);
+}
+
+.btn-yellow2 {
+  background-color: #faa706;
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 13px;
+  background-image: none;
+}
+
+.btn-yellow2:hover {
+  background-color: #d38d04;
+  background-image: none;
+}
+
+/* Top Content */
+.top-content {
+  background-color: #4282C2;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .top-content .container {
+    max-width: 916px;
+  }
+}
+
+.top-content h1 {
+  font-size: 32px;
+  color: #a1bdd3;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.top-content h2 {
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.top-content h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 1.4;
+}
+
+/* Mid Content */
+.mid-content {
+  margin-top: -30px;
+}
+
+.mid-content .rounded-block {
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.mid-content .presented .inner {
+  padding: 20px;
+}
+
+@media only screen and (min-width : 992px) {
+  .mid-content .presented .inner {
+    padding: 30px 15px 30px 30px;
+  }
+}
+
+.mid-content .presented h2 {
+  color: rgba(47, 47, 47, 0.901961);
+}
+
+.mid-content .presented .presentor h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mid-content .presented .presentor img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 992px) {
+  .mid-content .presented .presentor img {
+    max-width: 120px;
+  }
+}
+
+.mid-content .presented hr {
+  margin-top: 30px;
+  border-width: 2px;
+}
+
+.mid-content .services .inner {
+  background-color: #e0f3ff;
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  .mid-content .services .inner {
+    border-top-right-radius: 5px;
+    padding: 30px;
+  }
+}
+
+.mid-content .services h2 {
+  margin-bottom: 40px;
+  color: #096dad;
+}
+
+.mid-content .services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mid-content .services ul li {
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.mid-content .services ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mid-content .services ul li svg {
+  position: absolute;
+  left: 0;
+  color: #096dad;
+  top: 3px;
+}
+
+.mid-content .testimonials {
+  border-top: 1px solid #a6a5a5;
+}
+
+.mid-content .extra-info {
+  background-color: #a6a5a5;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .mid-content .extra-info img {
+    max-width: 100px;
+  }
+}
+
+.mid-content .extra-info p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #323232;
+  font-size: 12px;
+  color: #fff;
+}
+
+@media (min-width: 480px) {
+  .site-footer {
+    font-size: 14px;
+  }
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Modal */
+#signup-modal .close {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  font-size: 45px;
+}
+
+#signup-modal .modal-header {
+  padding: 40px 24px 24px;
+}
+
+#signup-modal h2 {
+  font-weight: 700;
+}
+
+#signup-modal .form-control {
+  background-color: #eee;
+  border-radius: 0;
+  border: 0px;
+  height: 50px;
+}
+
+@media (min-width: 480px) {
+  #signup-modal .btn-yellow1, #signup-modal .btn-yellow2 {
+    font-size: 30px;
+  }
+}
+
+#signup-modal .extra-note {
+  color: #aaa;
+}
