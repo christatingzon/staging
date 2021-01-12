@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+/********************************
+* Base Styles 
+*********************************/
+/* reset by boostrap */
+body, html {
+  min-height: 100vh;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.4s ease;
+  color: #333;
+}
+
+a:hover {
+  color: #139ed3;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.site-header {
+  background-color: #16AFEA;
+}
+
+@media (min-width: 992px) {
+  .main-content .container {
+    max-width: 960px;
+  }
+}
+
+.main-content .container .btn-join {
+  padding: 20px 18px;
+  background-color: #16AFEA;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .main-content .container .btn-join {
+    font-size: 18px;
+    padding: 20px 3rem;
+  }
+}
+
+.main-content .container .btn-join:hover {
+  background-color: #139ed3;
+}
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid #dadce0;
+}
+
+.site-footer a {
+  font-size: 13px;
+}
