@@ -156,6 +156,52 @@ h4 {
   }
 }
 
+@media (min-width: 992px) {
+  .product-overview h2 {
+    font-size: 34px;
+  }
+}
+
+.product-overview .container-fit {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 900px) {
+  .product-overview .container-fit {
+    border-radius: 10px;
+  }
+}
+
+.product-overview ul {
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.product-overview ul strong {
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .product-overview ul {
+    font-size: 22px;
+  }
+}
+
+.product-overview p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .product-overview p {
+    font-size: 24px;
+  }
+}
+
 .review .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
